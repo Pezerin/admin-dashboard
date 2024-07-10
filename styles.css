@@ -7,9 +7,14 @@
     font-family: "Roboto", sans-serif;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 .container {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: .5fr 4fr;
     grid-template-columns: 1fr 5fr;
 }
 
@@ -58,6 +63,7 @@
 .header-bottom {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .greeting {
@@ -98,14 +104,15 @@
     background-color: #1992D4;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 2fr repeat(11, 1fr) 8fr;
+    grid-template-rows: 1.5fr repeat(11, .75fr) 8fr;
+    height: 100vh;
 }
 
 .sidebar div {
     display: flex;
     align-items: center;
     color: white;
-    margin: 10px;
+    margin: 0px;
     margin-left: 20px;
 }
 
@@ -128,4 +135,95 @@
 
 .content {
     background-color: #E2E8F0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 25px;
+}
+
+.projects > h3 {
+    margin-bottom: 15px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.project-container > div {
+    background-color: white;
+    box-shadow: -5px 0px 0px #F0B429;
+    border-radius: 5px;
+    padding: 25px;
+    height: 300px
+}
+
+.project-container > div > p {
+    color: gray;
+}
+
+.interact {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 5px;
+    gap: 25px;
+    height: 150px;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 25px;
+}
+
+.announcements > h3 {
+    margin-bottom: 15px;
+}
+
+.announcements-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.announcements-container > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.announcements-container > div > p {
+    color: gray;
+}
+
+.trending > h3 {
+    margin-bottom: 15px;
+}
+
+.trending-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.trending-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trending-profile > img {
+    margin-right: 15px;
+}
+
+.subtext {
+    color: gray;
 }
