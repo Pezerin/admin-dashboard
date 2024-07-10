@@ -24,6 +24,7 @@
 
 .search {
     margin: 25px;
+    margin-bottom: 10px;
     display: flex;
     margin-left: 35px;
 }
@@ -38,17 +39,59 @@
 
 .account {
     margin: 25px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     padding-right: 50px;
+}
+
+.account img {
+    margin-right: 30px;
 }
 
 .pfp {
     border: 3px solid black;
     border-radius: 50%;
     height: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.greeting {
+    margin: 15px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    margin-left: 15px;
+}
+
+.actions {
+    margin: 15px;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+.actions ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+.actions ul li button {
+    background-color: #1992D4;
+    color: white;
+    font-weight: bold;
+    border: 0px solid;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .sidebar {
